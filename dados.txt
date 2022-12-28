@@ -1,0 +1,26 @@
+areas	rep	prof	coleta	peso_seco_g
+Terço Superior	1	Serapileira	1	43.51
+Terço Superior	2	Serapileira	1	93.2
+Terço Superior	3	Serapileira	1	40
+Terço Superior	4	Serapileira	1	24.9
+Terço Médio	1	Serapileira	1	0
+Terço Médio	2	Serapileira	1	54.34
+Terço Médio	3	Serapileira	1	55.26
+Terço Médio	4	Serapileira	1	56.05
+Terço Inferior	1	Serapileira	1	55.23
+Terço Inferior	2	Serapileira	1	54.56
+Terço Inferior	3	Serapileira	1	44.71
+Terço Inferior	4	Serapileira	1	64
+Terço Superior	1	Serapileira	2	49.53
+Terço Superior	2	Serapileira	2	53.32
+Terço Superior	3	Serapileira	2	35.03
+Terço Superior	4	Serapileira	2	114.38
+Terço Médio	1	Serapileira	2	36.14
+Terço Médio	2	Serapileira	2	39.93
+Terço Médio	3	Serapileira	2	44.3
+Terço Médio	4	Serapileira	2	42.86
+Terço Inferior	1	Serapileira	2	49.3
+Terço Inferior	2	Serapileira	2	48.41
+Terço Inferior	3	Serapileira	2	43.31
+Terço Inferior	4	Serapileira	2	45.17
+

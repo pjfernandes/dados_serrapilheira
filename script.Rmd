@@ -1,0 +1,43 @@
+---
+title: "Relatório"
+author: "Pedro"
+date: "2022-12-28"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+setwd("/home/uff/Área de Trabalho/arquivos/lorena/dados_serrapilheira")
+df <- read.csv("dados.txt", h=T, sep="\t")
+library(GFD)
+```
+
+## Shapiro Test (dados não paramétricos)
+```{r cars, echo=FALSE}
+shapiro.test(df$peso_seco_g)
+qqnorm(df$peso_seco_g)
+qqline(df$peso_seco_g, col="red")
+```
+
+## Boxplot
+```{r, echo=FALSE}
+boxplot(df$peso_seco_g ~ df$areas)
+boxplot(df$peso_seco_g ~ df$coleta)
+boxplot(df$peso_seco_g ~ df$areas * df$coleta)
+```
+
+
+## Kruskall test: 1) peso seco em função das áreas  2) peso seco em função da coleta
+```{r, echo=FALSE}
+kruskal.test(df$peso_seco_g ~ df$areas)
+kruskal.test(df$peso_seco_g ~ df$coleta)
+```
+
+## Wilcox test (peso seco em função da coleta)
+```{r, echo=FALSE}
+wilcox.test(df$peso_seco_g ~ df$coleta)
+```
+
+## GFD test (verificar a interação entre area e coleta)
+```{r, echo=FALSE}
+GFD(df$peso_seco_g ~ df$areas * df$coleta)
+```
